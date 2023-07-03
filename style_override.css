@@ -1,0 +1,117 @@
+@font-face {
+  font-family: suisse mono;
+  src: url(assets/fonts/SuisseEDUIntlMono-Regular-WebS.woff2);
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  }
+
+ 
+h3 {
+  font-family: suisse mono;
+  font-size: 1rem;
+  color: rgb(65, 65, 65);
+  text-transform: uppercase;
+}
+
+h2 {
+font-family: "garamond-premier-pro-display", serif;
+font-weight: 500;
+font-style: italic;
+color: rgb(65, 65, 65);
+}
+
+
+.bottom-left {
+  position: fixed;
+  bottom: 3%;
+  left: 3%;
+}
+
+.top-right {
+  position: fixed;
+  top: 3%;
+  right: 3%;
+
+}
+
+.top-left {
+  position: fixed;
+  top: 3%;
+  left: 3%;
+}
+
+.bottom-right {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+
+}
+
+
+.visual {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navigation {
+  z-index: 100;
+}
+
+.zoom{  
+  height:100vh;  
+  width:100%;  
+  display:grid;  
+  place-items:center;  
+  position:fixed;  
+  top:0;  
+  left:0;
+}
+
+.fade {
+  transition: color 1s;
+}
+
+.fade:hover {
+  color: #1386c8;
+}
+
+.fade:focus,
+.fade:active {
+  color: black;
+  transition: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#tooltipText1 {
+  font-family: suisse mono;
+  display: none;
+  position: fixed;
+  /* background-color: #333; */
+  color: #fff;
+  padding: 5px;
+  /* border-radius: 5px; */
+  z-index: 1;
+}
+
+#tooltipText2 {
+  font-family: suisse mono;
+  display: none;
+  position: fixed;
+  /* background-color: #333; */
+  color: #fff;
+  padding: 5px;
+  /* border-radius: 5px; */
+  z-index: 1;
+}
+

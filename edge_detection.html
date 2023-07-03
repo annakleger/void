@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="libraries/bootstrap.css"> -->
+    <link rel="stylesheet" type="text/css" href="style_override.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/ipl8htp.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+
+    
+<!-- BILD -->
+
+<div class="zoom">  
+  <video id="Video" width="640" height="360">
+    <source src="assets/animation/edge_detection.mp4" type="video/mp4">
+  </video>
+</div>
+  
+<!-- INFO -->
+    <div class="top-right">
+      <a href="info.html">
+      <h3 class="fade">Info</h3>
+     </a>
+    </div>
+
+<!-- NAVIAGTION -->
+
+<div class="navigation">
+    <div class="bottom-left" id="tooltipContainer">
+      <a href="morph.html">
+      <h3 class="fade"> everything I know, <br> rather than only what I see</h3>
+    </a>
+  
+    <a href="edge_detection.html">
+      <h3 class="fade"> an opportunity to concentrate better on its form - <br> what I can actually see</h3>
+    </a>
+  
+    <a href="edge_only.html">
+      <h3 class="fade"> the void <br> opposite to what  has a meaning</h3>
+    </a>
+    <span id="tooltipText1">EXPLORE</span>
+    </div>
+  
+    <!-- <div class="bottom-right">
+      <a href="info.html"></a>
+    </div> -->
+
+  </div>
+
+
+<!-- TITEL -->
+    <div id="tooltipContainer2" class="top-left">
+      <h3 class="fade" id="audio1">A VOID OF KNOWLEDGE</h3>
+      <span id="tooltipText2">CLICK TO PLAY</span>
+    </div>
+
+
+    <script src="assets/scripts/sketch.js"></script>
+
+    <script src="sketch_mouse.js"></script>
+  </body>
+</html>
