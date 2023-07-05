@@ -183,6 +183,7 @@ a {
   z-index: 9999;
   text-transform: uppercase;
   transition: opacity 1s ease;
+  margin: 16px;
 }
 
 
