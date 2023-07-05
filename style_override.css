@@ -3,6 +3,12 @@
   src: url(assets/fonts/SuisseEDUIntlMono-Regular-WebS.woff2);
 }
 
+@font-face {
+  font-family: suisse;
+  src: url(assets/fonts/SuisseEDUIntl-Book-WebS.woff2);
+}
+
+
 
 html, body {
   margin: 0;
@@ -10,29 +16,42 @@ html, body {
   background-color: rgb(0, 0, 0);
   }
 
+  body {
+    cursor: none; 
+  }
+
  
 h3 {
   font-family: suisse mono;
   font-size: 1rem;
-  color: rgb(65, 65, 65);
+  color: rgb(121, 121, 121);
   text-transform: uppercase;
+  font-weight: 500;
 }
 
-h2 {
-font-family: "garamond-premier-pro-display", serif;
-font-weight: 500;
-font-style: italic;
-color: rgb(65, 65, 65);
+.zitat{
+padding-left: 1.1rem;
 }
-
 
 .bottom-left {
   position: fixed;
   bottom: 3%;
   left: 3%;
+  /* height: 50%; */
+  width: 30%;
 }
 
 .top-right {
+  position: fixed;
+  width: 8rem;
+  top: 3%;
+  right: 3%;
+  display: flex;
+justify-content: space-between;
+
+}
+
+.top-right-info {
   position: fixed;
   top: 3%;
   right: 3%;
@@ -43,6 +62,7 @@ color: rgb(65, 65, 65);
   position: fixed;
   top: 3%;
   left: 3%;
+  width: 30%;
 }
 
 .bottom-right {
@@ -61,9 +81,7 @@ color: rgb(65, 65, 65);
   transform: translate(-50%, -50%);
 }
 
-.navigation {
-  z-index: 100;
-}
+
 
 .zoom{  
   height:100vh;  
@@ -93,25 +111,80 @@ a {
   text-decoration: none;
 }
 
+.padding {
+  padding: 0.1rem;
+}
+
 #tooltipText1 {
   font-family: suisse mono;
   display: none;
   position: fixed;
-  /* background-color: #333; */
-  color: #fff;
-  padding: 5px;
+  color: rgb(121, 121, 121);
+  /* padding: 5px; */
   /* border-radius: 5px; */
-  z-index: 1;
+  z-index: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+
 }
 
 #tooltipText2 {
   font-family: suisse mono;
   display: none;
   position: fixed;
-  /* background-color: #333; */
-  color: #fff;
-  padding: 5px;
+  color: rgb(121, 121, 121);
+  /* padding: 5px; */
   /* border-radius: 5px; */
-  z-index: 1;
+  z-index: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
 }
+
+#tooltipText3 {
+  font-family: suisse mono;
+  display: none;
+  position: fixed;
+  color: rgb(121, 121, 121);
+  /* padding: 5px; */
+  /* border-radius: 5px; */
+  z-index: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+#dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  transition: background-color 0.5s;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.scroll-indicator {
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  pointer-events: none;
+  display: none;
+  color: rgb(121, 121, 121);
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-family: suisse mono;
+  font-weight: 500;
+  z-index: 9999;
+  text-transform: uppercase;
+  transition: opacity 1s ease;
+}
+
+
+
 

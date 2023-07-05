@@ -1,11 +1,11 @@
+// Audio 1
 
+// var audio = new Audio('/assets/audio/audio_1.mp3'); 
 
-var audio = new Audio('/assets/audio/audio_1.mp3'); 
-
-var playButton = document.getElementById('audio1');
-playButton.addEventListener('click', function() {
-  audio.play();
-});
+// var playButton = document.getElementById('audio1');
+// playButton.addEventListener('click', function() {
+//   audio.play();
+// });
 
 
 // scroll zoomt in video
@@ -131,3 +131,79 @@ tooltipContainer2.addEventListener('mouseout', function() {
   tooltipText2.style.display = 'none';
 });
 
+
+  // tooltip3
+
+  var tooltipContainer3 = document.getElementById('tooltipContainer3');
+  var tooltipText3 = document.getElementById('tooltipText3');
+  
+  tooltipContainer3.addEventListener('mousemove', function(e) {
+    var x = e.clientX + -150;
+    var y = e.clientY + 20; // Adjust the offset to position the tooltip as desired
+  
+    tooltipText3.style.display = 'block';
+    tooltipText3.style.left = x + 'px';
+    tooltipText3.style.top = y + 'px';
+  });
+  
+  tooltipContainer3.addEventListener('mouseout', function() {
+    tooltipText3.style.display = 'none';
+  });
+  
+
+// POINTER
+
+document.addEventListener('mousemove', function (event) {
+  var dot = document.getElementById('dot');
+  dot.style.left = (event.pageX - 5) + 'px';
+  dot.style.top = (event.pageY - 5) + 'px';
+
+  var r = Math.floor(Math.random() * 256);
+  var g = Math.floor(Math.random() * 256);
+  var b = Math.floor(Math.random() * 256);
+  dot.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+});
+
+
+// Scroll indicator
+document.addEventListener("DOMContentLoaded", function() {
+  var scrollIndicator = document.createElement("div");
+  scrollIndicator.classList.add("scroll-indicator");
+  scrollIndicator.textContent = "Scroll";
+  document.body.appendChild(scrollIndicator);
+
+  var isMoving = false;
+  var timeout;
+
+  function showScrollIndicator() {
+    if (!isMoving) {
+      scrollIndicator.style.display = "block";
+      setTimeout(function() {
+        scrollIndicator.style.opacity = "1";
+      }, 10); // Delaying the opacity transition by 10 milliseconds
+    }
+  }
+
+  function hideScrollIndicator() {
+    scrollIndicator.style.opacity = "0";
+    setTimeout(function() {
+      scrollIndicator.style.display = "none";
+    }, 1000); // Set the desired transition duration in milliseconds (here it's set to 1 second)
+  }
+
+  document.addEventListener("mousemove", function() {
+    if (!isMoving) {
+      hideScrollIndicator();
+
+      clearTimeout(timeout);
+      isMoving = true;
+
+      timeout = setTimeout(function() {
+        isMoving = false;
+        showScrollIndicator();
+      }, 3000); // Set the desired timeout in milliseconds (here it's set to 1 second)
+    }
+  });
+
+  showScrollIndicator();
+});
