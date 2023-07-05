@@ -27,6 +27,14 @@ h3 {
 
 }
 
+.top-right-visual {
+  position: fixed;
+  top: 3%;
+  right: 3%;
+  z-index: 500;
+
+}
+
 .top-left {
   position: fixed;
   top: 3%;
@@ -59,10 +67,10 @@ h3 {
 
 
 .hover-image {
-  width: 50%;
+  width: 45%;
   position: fixed;
   top: 30%;
-right: 3%;
+  right: 3%;
   /* transform: translate(-50%, -50%); */
   opacity: 0;
   pointer-events: none;
@@ -74,12 +82,13 @@ right: 3%;
 .hover-text {
   position: relative;
   width: 40%;
+  padding-top: 1.5rem;
 }
 
 
 .container-info {
   position: absolute;
-  width: auto;
+  width: 97%;
   left: 3%;
   top: 40%;
   overflow-y: scroll;
@@ -88,7 +97,7 @@ right: 3%;
 
 
 .hover-image-content {
-  width: 80%; /* Adjust the size as desired */
+  width: 100%; /* Adjust the size as desired */
   height: auto; /* Adjust the size as desired */
 }
 
@@ -102,7 +111,7 @@ right: 3%;
 
 .fade-zitat {
   transition: color 1s;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
 }
 
 .fade-zitat:hover {
