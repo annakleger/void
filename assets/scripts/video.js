@@ -15,29 +15,29 @@
 //   });
 
 
-// Array of words
-var words = ["THE INFORMATION OF VOID","WAS IST INFORMATION?", "THE INFORMATION OF VOID", "WAS IST LEERRAUM?", "THE INFORMATION OF VOID"];
+// // Array of words
+// var words = ["THE INFORMATION OF VOID","WAS IST INFORMATION?", "THE INFORMATION OF VOID", "WAS IST LEERRAUM?", "THE INFORMATION OF VOID"];
 
-// Get the text element
-var textElement = document.getElementById("fading-text");
+// // Get the text element
+// var textElement = document.getElementById("fading-text");
 
-// Function to switch the text
-function switchText() {
-  // Generate a random index
-  var randomIndex = Math.floor(Math.random() * words.length);
+// // Function to switch the text
+// function switchText() {
+//   // Generate a random index
+//   var randomIndex = Math.floor(Math.random() * words.length);
   
-  // Get the word at the random index
-  var randomWord = words[randomIndex];
+//   // Get the word at the random index
+//   var randomWord = words[randomIndex];
   
-  // Set the word as the text content
-  textElement.textContent = randomWord;
-}
+//   // Set the word as the text content
+//   textElement.textContent = randomWord;
+// }
 
-// Call switchText function initially
-switchText();
+// // Call switchText function initially
+// switchText();
 
-// Set interval to switch the text every 2 seconds (2000 milliseconds)
-setInterval(switchText, 3000);
+// // Set interval to switch the text every 2 seconds (2000 milliseconds)
+// setInterval(switchText, 3000);
 
 
 
