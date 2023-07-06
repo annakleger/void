@@ -1,3 +1,10 @@
+body {
+  cursor: none;
+}
+
+* {
+  cursor: none !important;
+}
 
 html {
   overflow-y: scroll;
@@ -107,7 +114,10 @@ h3 {
   pointer-events: initial;
 }
 
-
+a {
+  pointer-events: none;
+  cursor: none;
+}
 
 .fade-zitat {
   transition: color 1s;
@@ -137,4 +147,5 @@ h3 {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+
 }

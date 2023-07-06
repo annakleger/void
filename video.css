@@ -3,6 +3,10 @@
     src: url(assets/fonts/SuisseEDUIntlMono-Regular-WebS.woff2);
   }
   
+
+  * {
+    cursor: none !important;
+  }
   
   html, body {
     margin: 0;

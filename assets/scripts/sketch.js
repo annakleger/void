@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function() {
       timeout = setTimeout(function() {
         isMoving = false;
         showScrollIndicator();
-      }, 3000); // Set the desired timeout in milliseconds (here it's set to 1 second)
+      }, 2000); // Set the desired timeout in milliseconds (here it's set to 1 second)
     }
   });
 
