@@ -12,7 +12,6 @@
   
     body {
       cursor: none; 
-      pointer: none;
     }
   
     a {
@@ -29,9 +28,11 @@
     z-index: -1;
   }
   
+  
 #video-background {
   position: absolute;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;

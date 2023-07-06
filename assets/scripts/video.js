@@ -16,7 +16,7 @@
 
 
 // // Array of words
-// var words = ["THE INFORMATION OF VOID","WAS IST INFORMATION?", "THE INFORMATION OF VOID", "WAS IST LEERRAUM?", "THE INFORMATION OF VOID"];
+// var words = ["WAS IST INFORMATION?", "THE INFORMATION OF VOID", "WAS IST LEERRAUM?", "THE INFORMATION OF VOID"];
 
 // // Get the text element
 // var textElement = document.getElementById("fading-text");
@@ -37,7 +37,7 @@
 // switchText();
 
 // // Set interval to switch the text every 2 seconds (2000 milliseconds)
-// setInterval(switchText, 3000);
+// setInterval(switchText, 5000);
 
 
 
@@ -61,24 +61,24 @@ document.addEventListener('mousemove', function (event) {
 
 const fadeElements = document.querySelectorAll('.fade');
 
-fadeElements.forEach(element => {
-  const originalColor = getComputedStyle(element).color;
+    fadeElements.forEach(element => {
+      const originalColor = getComputedStyle(element).color;
 
-  element.addEventListener('mouseenter', () => {
-    const randomColor = getRandomColor();
-    element.style.color = randomColor;
-  });
+      element.addEventListener('mouseenter', () => {
+        const randomColor = getRandomColor();
+        element.style.color = randomColor;
+      });
 
-  element.addEventListener('mouseleave', () => {
-    element.style.color = originalColor;
-  });
-});
+      element.addEventListener('mouseleave', () => {
+        element.style.color = originalColor;
+      });
+    });
 
-function getRandomColor() {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
