@@ -8,6 +8,11 @@
   src: url(assets/fonts/SuisseEDUIntl-Book-WebS.woff2);
 }
 
+@font-face {
+  font-family: suisse-bold-mono;
+  src: url(assets/fonts/SuisseEDUIntlMono-Bold-WebXL.woff2);
+}
+
 
 
 html, body {
@@ -186,6 +191,10 @@ a {
   margin: 16px;
 }
 
+
+.active {
+  font-family: suisse-bold-mono;
+}
 
 
 
