@@ -177,7 +177,8 @@ a {
 .scroll-indicator {
   position: fixed;
   top: 3%;
-  left: 50%;
+  text-align: center;
+  width: 100%;
   pointer-events: none;
   display: none;
   color: rgb(121, 121, 121);

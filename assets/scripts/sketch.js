@@ -169,7 +169,7 @@ document.addEventListener('mousemove', function (event) {
 document.addEventListener("DOMContentLoaded", function() {
   var scrollIndicator = document.createElement("div");
   scrollIndicator.classList.add("scroll-indicator");
-  scrollIndicator.textContent = "Scroll";
+  scrollIndicator.textContent = "SCROLL AND MOVE CURSOR";
   document.body.appendChild(scrollIndicator);
 
   var isMoving = false;
