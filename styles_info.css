@@ -95,7 +95,7 @@ h3 {
 
 .container-info {
   position: absolute;
-  width: 97%;
+  width: 100%;
   left: 3%;
   top: 40%;
   overflow-y: scroll;
